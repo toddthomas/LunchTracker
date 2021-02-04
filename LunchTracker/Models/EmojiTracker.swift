@@ -10,11 +10,14 @@ import Foundation
 /// Service which tracks the location of nearby instances of a specified subset of emoji.
 ///
 /// `EmojiTracker` can only track one emoji at a time, and it might decide to track a different emoji at
-/// any time. Position updates for the currently-tracked emoji are provided to the specified
-/// delegate at irregular intervals.
+/// any time.
 ///
-/// `EmojiTracker` can identify the emoji it is currently tracking. Emoji identification is
-/// computationally expensive, and thus is performed asynchronously.
+/// Position updates for the currently-tracked emoji are provided to the specified delegate at irregular intervals.
+/// X- and y-coordinates of the position range from 0.0 to 1.0. The mapping of this unit square to the real
+/// world is a trade secret of EmojiTracker, Inc.
+///
+/// `EmojiTracker` can identify the emoji it is currently tracking. Emoji identification is computationally
+/// expensive, and thus is performed asynchronously.
 class EmojiTracker {
     private var emojiToTrack: Array<String>
     

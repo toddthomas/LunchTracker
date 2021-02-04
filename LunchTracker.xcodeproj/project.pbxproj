@@ -13,6 +13,8 @@
 		2E29DEB825CC6612008DDFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DEB625CC6612008DDFCB /* Main.storyboard */; };
 		2E29DEBA25CC6614008DDFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DEB925CC6614008DDFCB /* Assets.xcassets */; };
 		2E29DEBD25CC6614008DDFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DEBB25CC6614008DDFCB /* LaunchScreen.storyboard */; };
+		2E29DEC725CC6653008DDFCB /* EmojiTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DEC625CC6653008DDFCB /* EmojiTracker.swift */; };
+		2E29DED125CC7554008DDFCB /* EmojiTrackerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DED025CC7554008DDFCB /* EmojiTrackerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2E29DEB925CC6614008DDFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E29DEBC25CC6614008DDFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E29DEBE25CC6614008DDFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E29DEC625CC6653008DDFCB /* EmojiTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTracker.swift; sourceTree = "<group>"; };
+		2E29DED025CC7554008DDFCB /* EmojiTrackerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTrackerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,22 @@
 				2E29DEB025CC6612008DDFCB /* AppDelegate.swift */,
 				2E29DEB225CC6612008DDFCB /* SceneDelegate.swift */,
 				2E29DEB425CC6612008DDFCB /* ViewController.swift */,
+				2E29DEC525CC663A008DDFCB /* Models */,
 				2E29DEB625CC6612008DDFCB /* Main.storyboard */,
 				2E29DEB925CC6614008DDFCB /* Assets.xcassets */,
 				2E29DEBB25CC6614008DDFCB /* LaunchScreen.storyboard */,
 				2E29DEBE25CC6614008DDFCB /* Info.plist */,
 			);
 			path = LunchTracker;
+			sourceTree = "<group>";
+		};
+		2E29DEC525CC663A008DDFCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DEC625CC6653008DDFCB /* EmojiTracker.swift */,
+				2E29DED025CC7554008DDFCB /* EmojiTrackerDelegate.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +97,8 @@
 			dependencies = (
 			);
 			name = LunchTracker;
+			packageProductDependencies = (
+			);
 			productName = LunchTracker;
 			productReference = 2E29DEAD25CC6612008DDFCB /* LunchTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +126,8 @@
 				Base,
 			);
 			mainGroup = 2E29DEA425CC6612008DDFCB;
+			packageReferences = (
+			);
 			productRefGroup = 2E29DEAE25CC6612008DDFCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E29DED125CC7554008DDFCB /* EmojiTrackerDelegate.swift in Sources */,
 				2E29DEB525CC6612008DDFCB /* ViewController.swift in Sources */,
 				2E29DEB125CC6612008DDFCB /* AppDelegate.swift in Sources */,
 				2E29DEB325CC6612008DDFCB /* SceneDelegate.swift in Sources */,
+				2E29DEC725CC6653008DDFCB /* EmojiTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
